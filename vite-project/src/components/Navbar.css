@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 
 .navbar {
   position: fixed;
-  width: 1590px;
+  width: 100%;
   top: 0;
   height: 72px;
   padding: 0 60px;
-z-index: 10;
+  box-sizing: border-box;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
-pointer-events: none;
+  pointer-events: none;
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(6px);
 
@@ -18,14 +19,12 @@ pointer-events: none;
 }
 
 .nav-logo {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 22px;
   letter-spacing: 2px;
   color: black;
 
-  text-shadow:
-    0 0 8px rgba(179, 0, 0, 0.6),
-    0 0 18px rgba(179, 0, 0, 0.4);
+  text-shadow: 0 0 8px rgba(179, 0, 0, 0.6), 0 0 18px rgba(179, 0, 0, 0.4);
 }
 
 .nav-links {
@@ -35,7 +34,7 @@ pointer-events: none;
 }
 
 .nav-links li {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 14px;
   letter-spacing: 1px;
   color: #e6e6e6;
@@ -46,7 +45,7 @@ pointer-events: none;
 }
 
 .nav-links li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -63,4 +62,43 @@ pointer-events: none;
 
 .nav-links li:hover::after {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  .nav-logo {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links li {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 12px;
+    height: 50px;
+  }
+
+  .nav-logo {
+    font-size: 12px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links li {
+    font-size: 9px;
+  }
 }
