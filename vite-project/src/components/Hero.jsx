@@ -54,7 +54,7 @@ const Hero = () => {
     }
   }, [])
 
-  const container = {
+  const containe = {
     hidden: {},
     visible: {
       transition: { staggerChildren: 0.2 },
