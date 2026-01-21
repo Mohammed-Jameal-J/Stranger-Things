@@ -67,7 +67,7 @@ const Hero = () => {
   }
 
   const navbarVariant = {
-    hidden: { y: -100, opacity: 0 },
+    hidden: { y: -10, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 80, damping: 14 } },
   }
 
@@ -80,7 +80,7 @@ const Hero = () => {
       <motion.div className="hero-content" variants={container} initial="hidden" animate="visible">
         <motion.div className="left" variants={item}>
           <h1 className="st-title">
-            STRANGER<br />THINGS
+            STRANGER<br />THING
           </h1>
           <motion.p className="st-desc" variants={item}>
             When the lights begin to flicker and reality bends,
