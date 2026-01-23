@@ -67,7 +67,7 @@ const Hero = () => {
   }
 
   const navbarVariant = {
-    hidden: { y: -10, opacity: 0 },
+    hidden: { y: -10000, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 80, damping: 14 } },
   }
 
